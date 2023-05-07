@@ -7,6 +7,7 @@ To analyze movie rental data for determining which movies and regions have the h
 
 ## Data
 
-Rockbuster Stealth LLC movie rental data managed by PostgreSQL. 
+Rockbuster Stealth LLC movie rental data managed by PostgreSQL. [Data Set]([Rockbuster Data.zip](https://github.com/tzeliadt/Rockbuster_Analysis--SQL/files/11415679/Rockbuster.Data.zip)
+
 
 Visualization data can be viewed with [Tableau](https://public.tableau.com/app/profile/tatum.zeliadt/viz/RockbusterSealthDataAnalysisProject/Story1).
