@@ -1,0 +1,15 @@
+SELECT D.title AS film,
+       F.name AS genre,
+       D.rating,
+       G.name AS language,
+ COUNT (A.rental_id) AS number_of_rentals,
+   SUM (A.amount) AS total_profit
+FROM payment A
+      INNER JOIN rental B ON A.rental_id=B.rental_id
+      INNER JOIN inventory C ON B.inventory_id=C.inventory_id
+      INNER JOIN film D ON C.film_id=D.film_id
+      INNER JOIN film_category E ON C.film_ID=E.film_ID
+      INNER JOIN category F ON E.category_id=F.category_id
+      INNER JOIN language G ON D.language_id=G.language_id
+Group BY title, genre, rating, language
+ORDER BY total_profit DESC;
